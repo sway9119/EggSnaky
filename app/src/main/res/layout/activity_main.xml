@@ -1,20 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textViewOfBrilliandroid"
+        android:id="@+id/textViewOfHelloWorld"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:text="@string/kirakira_name"
-        android:gravity ="center_vertical"
-        android:textColor="@color/blue"
-        android:textSize="30sp"
-        android:textStyle="italic"
-        android:typeface="serif" />
+        android:layout_height="wrap_content"
+        android:text="@string/main_text_name"
+        />
+    <Button
+        android:id="@+id/buttonOfbtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewOfHelloWorld"
+        android:text="BTN1" />
+    <Button
+        android:id="@+id/buttonOfbtn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonOfbtn1"
+        android:text="BTN2" />
 
-</android.support.constraint.ConstraintLayout>
+
+
+</RelativeLayout>
