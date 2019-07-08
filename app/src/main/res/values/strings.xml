@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">EggSnaky</string>
     <string name="main_text_name">main text</string>
+    <string name="main_btn3">ボタンの3です</string>
+
 
 </resources>
