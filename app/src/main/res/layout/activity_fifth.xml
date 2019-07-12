@@ -1,23 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_fifth"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
     tools:context=".FifthActivity">
+
+    <TextView
+        android:id="@+id/textViewOfJtoutai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_text_name"
+        />
+    <Button
+        android:id="@+id/buttonOfbtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewOfJyotai"
+        android:text="BTN1" />
+    <Button
+        android:id="@+id/buttonOfbtn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonOfbtn1"
+        android:text="BTN2" />
     <Button
         android:id="@+id/buttonOfBack"
+        android:layout_centerInParent="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text ="戻る"
-        />
-    <Button
-        android:id="@+id/buttonOfNone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/buttonOfBack"
-        android:text ="None"
-        />
+        android:text="@string/main_btn3" />
 
 
-</RelativeLayout.support.constraint.ConstraintLayout>
+
+</RelativeLayout>
